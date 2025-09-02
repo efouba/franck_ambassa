@@ -190,38 +190,57 @@
                 color: var(--bleu);
                 cursor: pointer;
             }
+            .menu-toggle:focus {
+                outline: none;
+            }
+            .menu-toggle:hover {
+                color: var(--rouge);
+            }
 
-            /* Hero Section */
             #home {
                 padding-top: 180px;
                 padding-bottom: 100px;
                 background: linear-gradient(135deg, var(--gris-clair) 0%, #e0f2fe 100%);
                 position: relative;
                 overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: row-reverse;
+                min-height: 500px; /* Ajoute une hauteur minimale raisonnable */
             }
 
             .hero-content {
                 max-width: 650px;
                 z-index: 2;
+                flex: 1;
             }
 
             .hero-img {
-                position: absolute;
-                right: -50px;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 40%;
-                max-width: 500px;
-                border-radius: 20px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 320px;
+                height: 320px;
+                border-radius: 50%;
                 box-shadow: var(--shadow);
+                overflow: hidden;
+                background: var(--blanc);
+                position: relative;
                 z-index: 1;
+                flex-shrink: 0;
+                margin-right: 0; /* Réduit la marge à droite */
+                margin-left: 650PX;    /* Enlève la marge à gauche */
+                top: 0;            /* Enlève le décalage vertical */
             }
 
             .hero-img img {
                 width: 100%;
-                border-radius: 20px;
+                height: 100%;
                 object-fit: cover;
+                border-radius: 50%;
             }
+
 
             .subtitle {
                 font-size: 1.3rem;
