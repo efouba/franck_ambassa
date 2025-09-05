@@ -849,7 +849,7 @@
             }
 
             .delay-1 {
-                animation-delay: 0.2s;
+                animation-delay: 0.2s ease forwards;
             }
 
             .delay-2 {
